@@ -24,14 +24,14 @@ int ex01_open(struct inode *pinode, struct file *pfile)
 	return 0;
 }
 
-//đăng ký entry point open
+//đăng ký entry point read
 ssize_t ex01_read(struct file *pfile, char __user *buffer,size_t length,loff_t *offset)
 {
 	printk(KERN_INFO "Inside the %s function\n",__FUNCTION__);
 	return 0;	
 }
 
-//đăng ký entry point open
+//đăng ký entry point write
 ssize_t ex01_write(struct file *pfile, const char __user *buffer,size_t length,loff_t *offset)
 {
 
